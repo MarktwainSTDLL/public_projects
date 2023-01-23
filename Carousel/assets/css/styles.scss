@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(253, 253, 253, 0.863);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+
+    .github {
+        background: radial-gradient(#f588d8, #c0a3e5);
+    }
+
+    .linkedin {
+        background: radial-gradient(#76b2fe, #b69efe);
+    }
+
+    .instagram {
+        background: radial-gradient(#fbc1cc, #fa99b2);
+    }
+
+    .card {
+        border-radius: 10px;
+        max-width: 20em;
+        width: 100%;
+        height: auto;
+        background-color: #2b2b2b;
+        padding: 60px 10px;
+        -webkit-box-shadow: 0px 17px 34px -11px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 17px 34px -11px rgba(0,0,0,0.75);
+        box-shadow: 0px 17px 34px -11px rgba(0,0,0,0.75);
+        transition: 0.8s;
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: #fff;
+
+            p {
+                text-align: center;
+            }
+
+            span {
+                font-size: 30px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            img {
+                max-width: 5em;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+
+            .button {
+                border: 1px solid #000;
+                border-radius: 3px;
+                padding: 10px;
+                background-color: #000;
+                color: #fff;
+                font-size: 15px;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                font-weight: bold;
+                transition: 0.7s;
+                width: 50%;
+                display: block;
+                margin: auto;
+            }
+
+            .button:hover {
+                background-color: rgba(0, 0, 0, 0.87);
+            }
+        }
+    }
+
+    .card:hover {
+        transform: scale(1.01);
+    }
+
+    .prevAndnext {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+}
+
+.container #carousel .card {
+    display: none;
+}
+
+.container #carousel .active {
+    display: block;
+}
