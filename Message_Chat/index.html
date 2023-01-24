@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS3 files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Chat - Project</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="blob"></div>
+            <div class="message_box">
+                <div class="message_box_header">
+                    <span>Message Chat!</span>
+                    <hr>
+                </div>
+                <div class="messages_body" id="messages">
+                    <div class="receive_message">
+                        <img src="/assets/img/profile1.jpeg" alt="profile one">
+                        <span>Hello world!</span>
+                    </div>
+
+                    <div class="send_message">
+                        <span>Hello, my friend!</span>
+                        <img src="/assets/img/profile2.jpeg" alt="profile two">
+                    </div>
+
+                    <div class="receive_message">
+                        <img src="/assets/img/profile1.jpeg" alt="profile one">
+                        <span>How are you?</span>
+                    </div>
+
+                    <div class="send_message">
+                        <span>I'm fine and u!?</span>
+                        <img src="/assets/img/profile2.jpeg" alt="profile two">
+                    </div>
+
+                    <div class="receive_message">
+                        <img src="/assets/img/profile1.jpeg" alt="profile one">
+                        <span>I'm fine too, thanks for asking!</span>
+                    </div>
+                </div>
+                <div class="message_box_body">
+                    <form class="form_message">
+                        <button id="btn_icon"><i class="fa-regular fa-face-smile icon"></i></button>
+                        <input type="text" placeholder="Type a message...">
+                        <button type="submit" class="button_conversation">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

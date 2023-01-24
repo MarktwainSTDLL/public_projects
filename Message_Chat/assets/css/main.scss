@@ -1,0 +1,197 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #001220;
+}
+
+.container {
+    .message_box {
+        border: 2px solid #000;
+        max-width: 30em;
+        width: 100%;
+        height: 40em;
+        padding: 1em;
+        margin: 2em auto;
+        background: rgba(10, 14, 14, 0.95);
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/moutain.jpg");
+            z-index: -1;
+        }
+
+        .messages_body {
+            padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            height: 300px;
+
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid #2b2b2b;
+            }
+
+            span {
+                color: rgba(255, 255, 255, 0.829);
+            }
+
+            .receive_message {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+                    span {
+                        background: #1b1b1b;
+                        padding: 10px;
+                        border-radius: 10px;
+                    }
+            }
+
+            .send_message {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 10px;
+                    span {
+                        background: #2b2b2b;
+                        padding: 10px;
+                        border-radius: 10px;
+                    } 
+            }
+        }
+
+        .message_box_body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form_message {
+            position: fixed;
+            margin-top: 9.7em;
+            background-color: #131719;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10px;
+            border-radius: 10px;
+
+            .button_conversation {
+                border: none;
+                font-size: 20px;
+                border-radius: 50%;
+                padding: 5px 8px;
+                cursor: pointer;
+                background-color: rgb(134, 12, 247);
+                color: #fff;
+            }
+
+            #btn_icon {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            .icon {
+                color: rgba(255, 255, 255, 0.801);
+                font-size: 30px;
+            }
+
+            input {
+                padding: 10px;
+                width: 330px;
+                outline: none;
+                border: none;
+                background-color: #131719;
+                color: rgba(255, 255, 255, 0.801);
+
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.801);
+                }
+            }
+        }
+
+        .message_box_header {
+            padding: 1em;
+            span {
+                color:rgba(255, 255, 255, 0.801);
+            }
+            hr {
+                margin: 1em 0;
+            }
+        }
+  }
+}
+
+.blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(
+    180deg,
+    rgba(47, 184, 255,0.42) 31.77%,
+    #5c9df1 100%
+  );
+  mix-blend-mode: color-dodge;
+  -webkit-animation: move 25s infinite alternate;
+          animation: move 25s infinite alternate;
+  transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+
+  &:hover {
+    width: 520px;
+    height: 520px;
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
+    box-shadow:
+      inset 0 0 0 5px rgba(255,255,255, 0.6),
+      inset 100px 100px 0 0px #fa709a,
+      inset 200px 200px 0 0px #784ba8,
+      inset 300px 300px 0 0px #2b86c5;
+  }
+}
+
+@-webkit-keyframes move {
+  from {
+    transform: translate(-100px, -50px) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+
+  to {
+    transform: translate(500px, 100px) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translate(-100px, -50px) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+
+  to {
+    transform: translate(500px, 100px) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
+}
