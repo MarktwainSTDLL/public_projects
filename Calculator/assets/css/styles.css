@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #050505;
+}
+
+.container .struct-calculator {
+    border: 2px solid #66cdaa;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 8em;
+    padding: 15px;
+    background-color: #111111;
+    border-radius: 20px;
+}
+
+.container .struct-calculator .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .struct-calculator .content h2 {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.815);
+}
+
+.container .struct-calculator .content #calc_value {
+    width: 225px;
+    background-color: #333333;
+    height: 35px;
+    font-size: 25px;
+    color: #66cdaa;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid #66cdaa;
+}
+
+.container .struct-calculator .content .operators {
+    display: block;
+    margin: auto;
+}
+
+.container .struct-calculator .content .operators .btn {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: 1px solid #66cdaa;
+    color: white;
+}
+
+.container .struct-calculator .content .operators .btn:hover {
+    background-color: #111111;
+}

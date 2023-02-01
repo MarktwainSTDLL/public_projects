@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>A simple calculator!</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="struct-calculator">
+            <div class="content">
+                <h2>Calculator</h2>
+                
+                    <p id="calc_value"></p>
+
+                <div class="operators">
+                    <table>                 
+                        <tr>
+                            <td><button class="btn" onclick="cleanInput()">C</td>
+                            <td><button class="btn" onclick="backInput()"><</td>
+                            <td><button class="btn" onclick="insertValues('/')">/</button></td>
+                            <td><button class="btn" onclick="insertValues('*')">*</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" onclick="insertValues('7')">7</button></td>
+                            <td><button class="btn" onclick="insertValues('8')">8</button></td>
+                            <td><button class="btn" onclick="insertValues('9')">9</button></td>
+                            <td><button class="btn" onclick="insertValues('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" onclick="insertValues('4')">4</button></td>
+                            <td><button class="btn" onclick="insertValues('5')">5</button></td>
+                            <td><button class="btn" onclick="insertValues('6')">6</button></td>
+                            <td><button class="btn" onclick="insertValues('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" onclick="insertValues('1')">1</button></td>
+                            <td><button class="btn" onclick="insertValues('2')">2</button></td>
+                            <td><button class="btn" onclick="insertValues('3')">3</button></td>
+                            <td rowspan="2"><button class="btn" style="height: 106px;" onclick="calculateValues()">=</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="btn" style="width: 106px;" onclick="insertValues('0')">0</button></td>
+                            <td><button class="btn" onclick="insertValues('.')">.</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
