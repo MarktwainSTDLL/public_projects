@@ -1,0 +1,61 @@
+.searchFilm {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.192);
+}
+
+.searchFilm .search {
+    padding: 0.34rem;
+    color: #fff;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    outline: none;
+    border: none;
+}
+
+.searchFilm .search::placeholder {
+    color: #fff;
+}
+
+.searchFilm .btn {
+    padding: 0 0.3rem;
+    color: #fff;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.192);
+    cursor: pointer;
+}
+
+.searchFilm .searchResults {
+    background-color: transparent;
+    display: block;
+    color: #000;
+    position: absolute;
+    top: 30px;
+    overflow-y: scroll;
+    height: 200px;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+}
+
+
+.searchFilm .searchResults .searchResult a {
+    color: #fff;
+    line-height: 2rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #fff;
+  }
+  
